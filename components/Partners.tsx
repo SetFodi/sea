@@ -2,8 +2,13 @@
 
 import { PARTNERS } from "@/lib/data";
 
+const MARQUEE_COPIES = 4;
+const MARQUEE_ITEMS = Array.from({ length: MARQUEE_COPIES }, (_, copyIndex) =>
+  PARTNERS.map((partner) => ({ partner, copyIndex })),
+).flat();
+
 export default function Partners({ center = false }: { center?: boolean }) {
-  const groups = [PARTNERS, PARTNERS];
+  const groups = [MARQUEE_ITEMS, MARQUEE_ITEMS];
 
   return (
     <div className={`trust-logos${center ? " center" : ""}`} aria-label="Partner logos">
@@ -15,7 +20,8 @@ export default function Partners({ center = false }: { center?: boolean }) {
               key={groupIndex}
               aria-hidden={groupIndex === 1 ? "true" : undefined}
             >
-              {group.map((p) => {
+              {group.map(({ partner: p, copyIndex }) => {
+                const isDuplicate = groupIndex === 1 || copyIndex > 0;
                 const content = (
                   <>
                     {p.logo ? (
@@ -37,17 +43,19 @@ export default function Partners({ center = false }: { center?: boolean }) {
                     href={p.url}
                     target="_blank"
                     rel="noreferrer"
-                    key={`${groupIndex}-${p.main}`}
+                    key={`${groupIndex}-${copyIndex}-${p.main}`}
                     aria-label={`${p.main}${p.sub ? `, ${p.sub}` : ""}`}
-                    tabIndex={groupIndex === 1 ? -1 : undefined}
+                    aria-hidden={isDuplicate ? "true" : undefined}
+                    tabIndex={isDuplicate ? -1 : undefined}
                   >
                     {content}
                   </a>
                 ) : (
                   <span
                     className="partner-logo"
-                    key={`${groupIndex}-${p.main}`}
+                    key={`${groupIndex}-${copyIndex}-${p.main}`}
                     aria-label={`${p.main}${p.sub ? `, ${p.sub}` : ""}`}
+                    aria-hidden={isDuplicate ? "true" : undefined}
                   >
                     {content}
                   </span>

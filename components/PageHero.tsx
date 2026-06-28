@@ -8,15 +8,17 @@ export default function PageHero({
   eyebrowKey,
   titleKey,
   leadKey,
+  className = "",
 }: {
   crumbKey: string;
   eyebrowKey: string;
   titleKey: string;
   leadKey: string;
+  className?: string;
 }) {
   const { t } = useLang();
   return (
-    <section className="page-hero">
+    <section className={`page-hero${className ? ` ${className}` : ""}`}>
       <div className="container">
         <nav className="breadcrumb">
           <Link href="/">{t("nav.home")}</Link>

@@ -12,8 +12,14 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <PageHero crumbKey="pp.crumb" eyebrowKey="cat.eyebrow" titleKey="pp.title" leadKey="pp.lead" />
-      <section className="section">
+      <PageHero
+        crumbKey="pp.crumb"
+        eyebrowKey="cat.eyebrow"
+        titleKey="pp.title"
+        leadKey="pp.lead"
+        className="page-hero--products"
+      />
+      <section className="section section--products">
         <div className="container">
           <ProductCatalog />
         </div>
