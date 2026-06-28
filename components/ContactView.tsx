@@ -23,6 +23,15 @@ export default function ContactView() {
                   <div className="cc-v">{CONTACT.phone}</div>
                 </div>
               </a>
+              <a className="contact-card" href={CONTACT.whatsappHref} target="_blank" rel="noreferrer">
+                <span className="cc-ic">
+                  <Icon name="whatsapp" />
+                </span>
+                <div>
+                  <div className="cc-k">{t("cp.whatsapp.k")}</div>
+                  <div className="cc-v">{CONTACT.phone}</div>
+                </div>
+              </a>
               <a className="contact-card" href={`mailto:${CONTACT.email}`}>
                 <span className="cc-ic">
                   <Icon name="mail" />
@@ -53,8 +62,8 @@ export default function ContactView() {
             </div>
             <div className="map-embed">
               <iframe
-                title="SEA LLC location — Tbilisi"
-                src="https://www.google.com/maps?q=Tbilisi,Georgia&z=11&output=embed"
+                title="SEA Ltd location — Shalva Nutsubidze 20, Tbilisi"
+                src="https://www.google.com/maps?q=Shalva%20Nutsubidze%2020%20Tbilisi%20Georgia&z=15&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />

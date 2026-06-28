@@ -6,7 +6,7 @@ import CtaBand from "@/components/CtaBand";
 export const metadata: Metadata = {
   title: "პროდუქცია",
   description:
-    "წყლის დამუშავება, ქიმიური პროდუქცია, სამედიცინო და ლაბორატორიული, სამრეწველო აღჭურვილობა — SEA LLC კატალოგი.",
+    "წყლის დამუშავება, ქიმიური პროდუქცია, სამედიცინო და ლაბორატორიული, სამრეწველო აღჭურვილობა — SEA Ltd კატალოგი.",
 };
 
 export default function Page() {

@@ -6,7 +6,7 @@ import CtaBand from "@/components/CtaBand";
 export const metadata: Metadata = {
   title: "პროექტები",
   description:
-    "რეალიზებული პროექტები — წყლის დეზინფექციისა და დამუშავების სისტემები საქართველოს მასშტაბით. SEA LLC.",
+    "რეალიზებული პროექტები — დასრულებული პროექტების ფოტოები, წლები და დასახელებები. SEA Ltd.",
 };
 
 export default function Page() {

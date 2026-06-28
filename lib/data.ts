@@ -43,17 +43,16 @@ export function pick(obj: Loc | undefined, lang: Lang): string {
 export type Partner = {
   main: string;
   sub: string;
-  logo: string;
-  url: string;
+  logo?: string;
+  url?: string;
 };
 
 export const PARTNERS: Partner[] = [
-  { main: "GWP", sub: "Georgian Water", logo: "/partners/gwp.png", url: "https://gwp.ge/en/" },
+  { main: "ბათუმის წყალი", sub: "Batumi Water" },
+  { main: "ხელვაჩაურის წყალი", sub: "Khelvachauri Water" },
   { main: "UWSCG", sub: "United Water Supply", logo: "/partners/uwscg.png", url: "https://water.gov.ge/" },
-  { main: "SOCAR", sub: "Georgia Petroleum", logo: "/partners/socar.svg", url: "https://sgp.ge/en" },
-  { main: "Wissol", sub: "Petroleum", logo: "/partners/wissol.svg", url: "https://wissol.ge/en/" },
-  { main: "EVEX", sub: "Medical", logo: "/partners/evex.png", url: "https://evex.ge/en" },
-  { main: "New Hospitals", sub: "Medical", logo: "/partners/new-hospitals.svg", url: "https://newhospitals.ge/en" },
+  { main: "შპს ანაგი", sub: "Anagi" },
+  { main: "კერძო კომპანიები", sub: "Private companies" },
 ];
 
 export const CAT_PROD_ICON: Record<string, IconName> = {
@@ -297,27 +296,29 @@ export const CATEGORIES: Category[] = [
 export type Project = { img: string; tag: Loc; title: Loc };
 
 export const PROJECTS: Project[] = [
-  { img: "g-25-6.jpg", tag: { ka: "RO დანადგარი", en: "RO plant" }, title: { ka: "ანტიოსმოსური სკიდი მართვის პანელით", en: "Reverse-osmosis skid with control panel" } },
-  { img: "g-30-2.jpg", tag: { ka: "დოზირება", en: "Dosing" }, title: { ka: "დოზირების სადგური მართვის პანელით", en: "Dosing station with control panel" } },
-  { img: "g-29.jpg", tag: { ka: "წყლის დამუშავება", en: "Water treatment" }, title: { ka: "სისტემა ლურჯი ავზით და სატუმბი კვანძით", en: "System with blue tank and pump unit" } },
-  { img: "g-28.jpg", tag: { ka: "არმატურა", en: "Pipework" }, title: { ka: "მილგაყვანილობის კოლექტორი და სარქველები", en: "Pipe manifold and valves" } },
-  { img: "g-26.jpg", tag: { ka: "RO დანადგარი", en: "RO plant" }, title: { ka: "ანტიოსმოსური სკიდი სამუშაო ზონაში", en: "Reverse-osmosis skid in service area" } },
-  { img: "g-24-6.jpg", tag: { ka: "ინსტალაცია", en: "Installation" }, title: { ka: "დეზინფექციის სისტემა ობიექტზე", en: "Disinfection system on site" } },
-  { img: "g-27-2.jpg", tag: { ka: "დოზირება", en: "Dosing" }, title: { ka: "მზომი ტუმბოს კვანძი", en: "Metering pump unit" } },
-  { img: "g-25.jpg", tag: { ka: "მარილხსნარი", en: "Brine system" }, title: { ka: "მარილის გახსნისა და განზავების ავზები", en: "Salt dissolve & dilute tanks" } },
-  { img: "g-24-1.jpg", tag: { ka: "დოზირება", en: "Dosing" }, title: { ka: "დოზირების სისტემა ლურჯი ავზებით", en: "Dosing system with blue tanks" } },
-  { img: "g-23-3.jpg", tag: { ka: "მონტაჟი", en: "Installation" }, title: { ka: "რეზერვუარების მონტაჟი ობიექტზე", en: "Storage tank installation on site" } },
-  { img: "g-26-3.jpg", tag: { ka: "ლოგისტიკა", en: "Logistics" }, title: { ka: "ავზებისა და აღჭურვილობის მიწოდება", en: "Tank and equipment delivery" } },
-  { img: "g-25-4.jpg", tag: { ka: "რეგიონი", en: "Regional" }, title: { ka: "ობიექტი მთიან რეგიონში", en: "Site in a mountain region" } },
-  { img: "g-24-3.jpg", tag: { ka: "დოზირება", en: "Dosing" }, title: { ka: "დოზირების ტუმბო ლურჯ ავზზე", en: "Dosing pump on blue tank" } },
-  { img: "g-27.jpg", tag: { ka: "ობიექტი", en: "Field site" }, title: { ka: "სადგურის ოთახი და ტექნოლოგიური ავზები", en: "Plant room with process tanks" } },
-  { img: "g-29-1.jpg", tag: { ka: "დოზირება", en: "Dosing" }, title: { ka: "ქიმიური დოზირების სადგური", en: "Chemical dosing station" } },
-  { img: "g-24-5.jpg", tag: { ka: "მარილხსნარი", en: "Brine system" }, title: { ka: "მარილის მომზადების ავზები", en: "Salt preparation tanks" } },
+  { img: "completed/completed-01-polypropylene-pipes.jpeg", tag: { ka: "2020", en: "2020" }, title: { ka: "პოლიპროპილენის მილები და ფიტინგები", en: "Polypropylene pipes and fittings" } },
+  { img: "completed/completed-02-sewer-pipes.jpeg", tag: { ka: "2020", en: "2020" }, title: { ka: "წყალარინების მილები და ფასონური ნაწილები", en: "Sewer pipes and fittings" } },
+  { img: "completed/completed-03-brine-water-pump.jpeg", tag: { ka: "2020", en: "2020" }, title: { ka: "მარილწყლის ტუმბოები - ელექტროლიზერებში", en: "Brine water pumps for electrolyzers" } },
+  { img: "completed/completed-04-hypochlorite-parts-a.jpeg", tag: { ka: "2020", en: "2020" }, title: { ka: "ჰიპოქლორიდის დამამზადებელი დანადგარის ნაწილები", en: "Parts for hypochlorite generator equipment" } },
+  { img: "completed/completed-05-hypochlorite-parts-b.jpeg", tag: { ka: "2020", en: "2020" }, title: { ka: "ჰიპოქლორიდის დამამზადებელი დანადგარის ნაწილები", en: "Parts for hypochlorite generator equipment" } },
+  { img: "completed/completed-06-hypochlorite-parts-c.jpeg", tag: { ka: "2020", en: "2020" }, title: { ka: "ჰიპოქლორიდის დამამზადებელი დანადგარის ნაწილები", en: "Parts for hypochlorite generator equipment" } },
+  { img: "completed/completed-07-electrical-control-a.jpeg", tag: { ka: "2022", en: "2022" }, title: { ka: "ელექტროენერგიის გამანაწილებელი და საკონტროლო აპარატურა", en: "Electrical distribution and control equipment" } },
+  { img: "completed/completed-08-electrical-control-b.jpeg", tag: { ka: "2022", en: "2022" }, title: { ka: "ელექტროენერგიის გამანაწილებელი და საკონტროლო აპარატურა", en: "Electrical distribution and control equipment" } },
+  { img: "completed/completed-09-hypochlorite-parts-2022.jpeg", tag: { ka: "2022", en: "2022" }, title: { ka: "ჰიპოქლორიდის დამამზადებელი დანადგარის ნაწილები", en: "Parts for hypochlorite generator equipment" } },
+  { img: "completed/completed-10-electrical-control-2022.jpeg", tag: { ka: "2022", en: "2022" }, title: { ka: "ელექტროენერგიის გამანაწილებელი და საკონტროლო აპარატურა", en: "Electrical distribution and control equipment" } },
+  { img: "completed/completed-11-frequency-converters.jpeg", tag: { ka: "2023", en: "2023" }, title: { ka: "სიხშირული გარდამქმნელები", en: "Frequency converters" } },
+  { img: "completed/completed-12-hypochlorite-devices-2023.jpeg", tag: { ka: "2023", en: "2023" }, title: { ka: "ჰიპოქლორიდის აპარატების მიწოდება და მონტაჟი", en: "Supply and installation of hypochlorite units" } },
+  { img: "completed/completed-13-hypochlorite-production-2023.jpeg", tag: { ka: "2023", en: "2023" }, title: { ka: "ჰიპოქლორიდის წარმოების დანადგარის მიწოდება და მონტაჟი", en: "Supply and installation of hypochlorite production equipment" } },
+  { img: "completed/completed-14-hypochlorite-devices-2024.jpeg", tag: { ka: "2024", en: "2024" }, title: { ka: "ჰიპოქლორიდის აპარატების მიწოდება და მონტაჟი", en: "Supply and installation of hypochlorite units" } },
+  { img: "completed/completed-15-bearings.png", tag: { ka: "2025", en: "2025" }, title: { ka: "საკისრები", en: "Bearings" } },
+  { img: "completed/completed-16-hypochlorite-production-2025.jpeg", tag: { ka: "2025", en: "2025" }, title: { ka: "ჰიპოქლორიდის წარმოების დანადგარის მიწოდება და მონტაჟი", en: "Supply and installation of hypochlorite production equipment" } },
+  { img: "completed/completed-17-thermomanometers.jpeg", tag: { ka: "2026", en: "2026" }, title: { ka: "თერმომანომეტრები და წნევის ქვაბის რეზინის დამცავი შუასადები", en: "Thermomanometers and pressure-vessel rubber gasket" } },
 ];
 
 export const CONTACT = {
-  phone: "+995 555 123 456",
-  phoneHref: "+995555123456",
-  email: "info@sea.ge",
-  addr: "Tbilisi, Georgia",
+  phone: "+995 557 263 356",
+  phoneHref: "+995557263356",
+  whatsappHref: "https://wa.me/995557263356",
+  email: "shps.sea@gmail.com",
+  addr: "Shalva Nutsubidze 20, Tbilisi",
 };

@@ -107,6 +107,12 @@ export const ICONS: Record<string, ReactNode> = {
       <path d="m3 7 9 6 9-6" />
     </svg>
   ),
+  whatsapp: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7}>
+      <path d="M5.4 19.1 6.3 16A7.8 7.8 0 1 1 9 18.5l-3.6.6Z" />
+      <path d="M9.2 8.5c.2-.4.4-.5.8-.4l.8.2c.2.1.4.3.4.6l-.1 1c0 .2-.1.4-.3.5l-.5.4a5.7 5.7 0 0 0 2.9 2.9l.4-.5c.1-.2.3-.3.5-.3h1c.3 0 .5.2.6.4l.2.8c.1.4 0 .6-.4.8-.7.4-1.5.5-2.3.3-2.2-.5-4.5-2.8-5-5-.2-.8-.1-1.6.3-2.3Z" />
+    </svg>
+  ),
   pin: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7}>
       <path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11Z" />

@@ -125,9 +125,9 @@ export default function Preloader() {
 
         <div className="pre-brand">
           <span className="pn">სეა</span>
-          <span className="ps">SEA LLC</span>
+          <span className="ps">SEA Ltd</span>
         </div>
-        <div className="pre-tag">წყლის სისუფთავის ინჟინერია</div>
+        <div className="pre-tag">მრავალპროფილური მომწოდებელი კომპანია</div>
       </div>
     </div>
   );

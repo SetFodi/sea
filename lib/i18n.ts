@@ -5,10 +5,10 @@ export type Dict = Record<string, string>;
 export const I18N: Record<Lang, Dict> = {
   ka: {
     "brand.name": "სეა",
-    "brand.full": "შპს სეა",
-    "brand.sub": "SEA LLC",
+    "brand.full": "შპს „სეა“ Ltd “SEA”",
+    "brand.sub": "SEA Ltd",
 
-    "top.tag": "წყლის სისუფთავის ინჟინერია — 2015 წლიდან",
+    "top.tag": "მრავალპროფილური მომწოდებელი კომპანია — 2017 წლიდან",
     "top.call": "დარეკეთ",
     "top.email": "მოგვწერეთ",
 
@@ -24,13 +24,13 @@ export const I18N: Record<Lang, Dict> = {
     "hero.h1b": "ინჟინერია",
     "hero.h1c": "სრული ციკლით",
     "hero.lead":
-      "ვაპროექტებთ, ვაწვდით და ვამონტაჟებთ წყლის სადეზინფექციო და დამუშავების სისტემებს — ნატრიუმ ჰიპოქლორიტის გენერატორებიდან ანტიოსმოსურ (RO) დანადგარებამდე. წამყვანი მწარმოებლების ოფიციალური წარმომადგენელი საქართველოში.",
+      "შპს „სეა“ არის მრავალპროფილური მომწოდებელი კომპანია, რომელიც უზრუნველყოფს სამრეწველო აღჭურვილობის, წყლის დამუშავების სისტემების, სამედიცინო და ლაბორატორიული აღჭურვილობის, ქიმიური პროდუქციისა და სათადარიგო ნაწილების მიწოდებას სახელმწიფო და კერძო სექტორისთვის.",
     "hero.cta1": "იხილეთ პროდუქცია",
     "hero.cta2": "მიიღეთ კონსულტაცია",
 
-    "stat.1.n": "2015",
+    "stat.1.n": "2017",
     "stat.1.l": "დაარსების წელი",
-    "stat.2.n": "120",
+    "stat.2.n": "20",
     "stat.2.l": "დასრულებული პროექტი",
     "stat.3.n": "40",
     "stat.3.l": "მუდმივი დამკვეთი",
@@ -85,14 +85,14 @@ export const I18N: Record<Lang, Dict> = {
     "cta.title": "გჭირდებათ წყლის გადაწყვეტა თქვენი ობიექტისთვის?",
     "cta.lead": "გამოგვიგზავნეთ ტექნიკური დავალება ან მოთხოვნა — მოვამზადებთ შეთავაზებას უმოკლეს ვადაში.",
     "cta.btn1": "მოთხოვნის გაგზავნა",
-    "cta.btn2": "+995 555 123 456",
+    "cta.btn2": "+995 557 263 356",
 
     "foot.about":
-      "შპს სეა — წყლის დამუშავების, დეზინფექციისა და სამრეწველო აღჭურვილობის ინჟინერული კომპანია. წამყვანი მწარმოებლების ოფიციალური წარმომადგენელი საქართველოში.",
+      "შპს „სეა“ არის მრავალპროფილური მომწოდებელი კომპანია, რომელიც უზრუნველყოფს სამრეწველო აღჭურვილობის, წყლის დამუშავების სისტემების, სამედიცინო და ლაბორატორიული აღჭურვილობის, ქიმიური პროდუქციისა და სათადარიგო ნაწილების მიწოდებას.",
     "foot.nav": "ნავიგაცია",
     "foot.cat": "კატალოგი",
     "foot.contact": "კონტაქტი",
-    "foot.addr": "თბილისი, საქართველო",
+    "foot.addr": "შალვა ნუცუბიძის 20, თბილისი",
     "foot.rights": "ყველა უფლება დაცულია.",
     "foot.madein": "დამზადებულია საქართველოში",
     "foot.credit.before": "შექმნილია",
@@ -122,18 +122,18 @@ export const I18N: Record<Lang, Dict> = {
     "prp.partners.eyebrow": "პარტნიორები და დამკვეთები",
     "prp.partners.title": "ვისთან ვთანამშრომლობთ",
     "prp.partners.lead":
-      "გვენდობიან წყალმომარაგების, ენერგეტიკის, ჯანდაცვისა და სამომხმარებლო სექტორის წამყვანი ორგანიზაციები.",
+      "ვთანამშრომლობთ: “ბათუმის წყალი”, “ხელვაჩაურის წყალი”, “საქართველოს გაერთიანებული წყალმომარაგების კომპანია”, “შპს ანაგი” და სხვა კერძო კომპანიები.",
 
     "ap.crumb": "კომპანია",
     "ap.title": "ინჟინერია, რომელსაც წყალი ენდობა",
     "ap.lead":
-      "შპს სეა დაარსდა 2015 წელს და სპეციალიზდება წყლის დამუშავებისა და დეზინფექციის ტექნოლოგიებში. ვმონაწილეობთ სახელმწიფო ტენდერებში და წარმოვადგენთ წამყვან მწარმოებლებს.",
+      "შპს „სეა“ 2017 წლიდან უზრუნველყოფს სამრეწველო აღჭურვილობის, წყლის დამუშავების სისტემების, სამედიცინო და ლაბორატორიული აღჭურვილობის, ქიმიური პროდუქციისა და სათადარიგო ნაწილების მიწოდებას.",
     "ap.story.eyebrow": "ჩვენ შესახებ",
     "ap.story.title": "სანდო პარტნიორი წყლის ინფრასტრუქტურისთვის",
     "ap.story.p1":
-      "ვაერთიანებთ საინჟინრო ცოდნას და სერტიფიცირებულ აღჭურვილობას, რათა მივაწოდოთ ობიექტებს საიმედო წყლის გადაწყვეტები — სასმელი წყლის გაუსნებოვნებიდან სამრეწველო ანტიოსმოსურ დანადგარებამდე.",
+      "ვმუშაობთ სახელმწიფო და კერძო სექტორთან, ვაწვდით როგორც წყლის დამუშავებისა და დეზინფექციის სისტემებს, ისე სამრეწველო, სამედიცინო და ლაბორატორიულ აღჭურვილობას.",
     "ap.story.p2":
-      "როგორც წამყვანი მწარმოებლების ოფიციალური წარმომადგენელი, ვუზრუნველყოფთ სრულ ციკლს: აუდიტი, პროექტირება, მიწოდება, მონტაჟი, გაშვება და გარანტიული სერვისი.",
+      "ვთანამშრომლობთ წყალმომარაგების კომპანიებთან, სამშენებლო და კერძო ორგანიზაციებთან და პროექტებს ვაწვდით მოთხოვნის, ვადის და ტექნიკური ამოცანის მიხედვით.",
     "ap.values.eyebrow": "რატომ სეა",
     "ap.values.title": "რას ვუზრუნველყოფთ",
     "ap.v1.t": "ოფიციალური წარმომადგენლობა",
@@ -150,9 +150,10 @@ export const I18N: Record<Lang, Dict> = {
     "cp.title": "დაგვიკავშირდით",
     "cp.lead": "გამოგვიგზავნეთ მოთხოვნა ან ტექნიკური დავალება — გიპასუხებთ უმოკლეს ვადაში.",
     "cp.phone.k": "ტელეფონი",
+    "cp.whatsapp.k": "WhatsApp",
     "cp.email.k": "ელ. ფოსტა",
     "cp.addr.k": "მისამართი",
-    "cp.addr.v": "თბილისი, საქართველო",
+    "cp.addr.v": "შალვა ნუცუბიძის 20, თბილისი",
     "cp.hours.k": "სამუშაო საათები",
     "cp.hours.v": "ორშ – პარ, 10:00 – 18:00",
     "cp.form.title": "მოთხოვნის გაგზავნა",
@@ -178,10 +179,10 @@ export const I18N: Record<Lang, Dict> = {
 
   en: {
     "brand.name": "SEA",
-    "brand.full": "SEA LLC",
-    "brand.sub": "SEA LLC",
+    "brand.full": "SEA Ltd",
+    "brand.sub": "SEA Ltd",
 
-    "top.tag": "The engineering of clean water — since 2015",
+    "top.tag": "Multi-profile supplier company — since 2017",
     "top.call": "Call",
     "top.email": "Email us",
 
@@ -197,13 +198,13 @@ export const I18N: Record<Lang, Dict> = {
     "hero.h1b": "of clean water",
     "hero.h1c": "end to end",
     "hero.lead":
-      "We design, supply and install water disinfection and treatment systems — from sodium hypochlorite generators to reverse-osmosis plants. Authorized representative of leading manufacturers in Georgia.",
+      "SEA Ltd is a multi-profile supplier company providing industrial equipment, water treatment systems, medical and laboratory equipment, chemical products and spare parts to the public and private sectors.",
     "hero.cta1": "Explore products",
     "hero.cta2": "Get a consultation",
 
-    "stat.1.n": "2015",
+    "stat.1.n": "2017",
     "stat.1.l": "Established",
-    "stat.2.n": "120",
+    "stat.2.n": "20",
     "stat.2.l": "Projects delivered",
     "stat.3.n": "40",
     "stat.3.l": "Recurring clients",
@@ -258,14 +259,14 @@ export const I18N: Record<Lang, Dict> = {
     "cta.title": "Need a water solution for your facility?",
     "cta.lead": "Send us a technical brief or request — we'll prepare a proposal in the shortest time.",
     "cta.btn1": "Send a request",
-    "cta.btn2": "+995 555 123 456",
+    "cta.btn2": "+995 557 263 356",
 
     "foot.about":
-      "SEA LLC — an engineering company for water treatment, disinfection and industrial equipment. Authorized representative of leading manufacturers in Georgia.",
+      "SEA Ltd is a multi-profile supplier company for industrial equipment, water treatment systems, medical and laboratory equipment, chemical products and spare parts.",
     "foot.nav": "Navigation",
     "foot.cat": "Catalog",
     "foot.contact": "Contact",
-    "foot.addr": "Tbilisi, Georgia",
+    "foot.addr": "Shalva Nutsubidze 20, Tbilisi",
     "foot.rights": "All rights reserved.",
     "foot.madein": "Made in Georgia",
     "foot.credit.before": "Created by",
@@ -295,18 +296,18 @@ export const I18N: Record<Lang, Dict> = {
     "prp.partners.eyebrow": "Partners & clients",
     "prp.partners.title": "Who we work with",
     "prp.partners.lead":
-      "Trusted by leading organizations in water utilities, energy, healthcare and the consumer sector.",
+      "We work with Batumi Water, Khelvachauri Water, United Water Supply Company of Georgia, Anagi LLC and other private companies.",
 
     "ap.crumb": "Company",
     "ap.title": "Engineering that water can trust",
     "ap.lead":
-      "SEA LLC was founded in 2015 and specializes in water treatment and disinfection technologies. We take part in public tenders and represent leading manufacturers.",
+      "Since 2017, SEA Ltd has supplied industrial equipment, water treatment systems, medical and laboratory equipment, chemical products and spare parts.",
     "ap.story.eyebrow": "About us",
     "ap.story.title": "A reliable partner for water infrastructure",
     "ap.story.p1":
-      "We combine engineering expertise and certified equipment to deliver dependable water solutions — from drinking-water disinfection to industrial reverse-osmosis plants.",
+      "We serve public and private sector customers with water treatment and disinfection systems as well as industrial, medical and laboratory equipment.",
     "ap.story.p2":
-      "As an authorized representative of leading manufacturers, we cover the full cycle: audit, design, supply, installation, commissioning and warranty service.",
+      "We work with water utilities, construction companies and private organizations, delivering projects according to technical requirements and timelines.",
     "ap.values.eyebrow": "Why SEA",
     "ap.values.title": "What we guarantee",
     "ap.v1.t": "Authorized representation",
@@ -323,9 +324,10 @@ export const I18N: Record<Lang, Dict> = {
     "cp.title": "Get in touch",
     "cp.lead": "Send us a request or a technical brief — we'll get back to you shortly.",
     "cp.phone.k": "Phone",
+    "cp.whatsapp.k": "WhatsApp",
     "cp.email.k": "Email",
     "cp.addr.k": "Address",
-    "cp.addr.v": "Tbilisi, Georgia",
+    "cp.addr.v": "Shalva Nutsubidze 20, Tbilisi",
     "cp.hours.k": "Working hours",
     "cp.hours.v": "Mon – Fri, 10:00 – 18:00",
     "cp.form.title": "Send a request",

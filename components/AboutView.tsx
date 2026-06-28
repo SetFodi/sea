@@ -9,7 +9,7 @@ export default function AboutView() {
 
   const facts = [
     { n: t("stat.1.n"), u: "", l: t("stat.1.l") },
-    { n: t("stat.2.n"), u: "+", l: t("stat.2.l") },
+    { n: t("stat.2.n"), u: "", l: t("stat.2.l") },
     { n: t("stat.3.n"), u: "+", l: t("stat.3.l") },
     { n: t("stat.4.n"), u: "", l: t("stat.4.l") },
   ];
@@ -28,7 +28,7 @@ export default function AboutView() {
           <div className="split">
             <Reveal className="media-frame">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/projects/g-30-2.jpg" alt="SEA LLC water disinfection installation" />
+              <img src="/projects/g-30-2.jpg" alt="SEA Ltd water disinfection installation" />
               <span className="frame-tag">NaClO · DOSING · SCADA</span>
             </Reveal>
             <Reveal delay={1}>

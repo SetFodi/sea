@@ -14,7 +14,7 @@ export default function HomeView() {
 
   const stats = [
     { n: t("stat.1.n"), u: "", l: t("stat.1.l") },
-    { n: t("stat.2.n"), u: "+", l: t("stat.2.l") },
+    { n: t("stat.2.n"), u: "", l: t("stat.2.l") },
     { n: t("stat.3.n"), u: "+", l: t("stat.3.l") },
     { n: t("stat.4.n"), u: "", l: t("stat.4.l") },
   ];

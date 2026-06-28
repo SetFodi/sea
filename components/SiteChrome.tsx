@@ -68,7 +68,7 @@ export default function SiteChrome() {
 
         <div className="container">
           <nav className="navbar" aria-label="Primary">
-            <Link className="brand" href="/" aria-label="SEA LLC">
+            <Link className="brand" href="/" aria-label="SEA Ltd">
               <Logo />
               <span className="logo-text">
                 <span className="logo-name">{t("brand.name")}</span>

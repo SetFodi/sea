@@ -72,6 +72,10 @@ export default function SiteFooter() {
                 <a href={`tel:${CONTACT.phoneHref}`}>{CONTACT.phone}</a>
               </li>
               <li>
+                <Icon name="whatsapp" />
+                <a href={CONTACT.whatsappHref} target="_blank" rel="noreferrer">WhatsApp</a>
+              </li>
+              <li>
                 <Icon name="mail" />
                 <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
               </li>
