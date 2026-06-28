@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useLang } from "@/lib/LanguageProvider";
 import { Icon } from "./icons";
 
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
+
 export default function ContactForm() {
   const { t } = useLang();
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -32,18 +34,30 @@ export default function ContactForm() {
           setStatus("sending");
 
           try {
-            const response = await fetch("/api/contact", {
-              method: "POST",
-              body: new FormData(e.currentTarget),
-            });
+            const formData = new FormData(e.currentTarget);
+            const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+            const subject = formData.get("subject");
 
-            if (!response.ok) throw new Error("Request failed");
+            if (!accessKey) throw new Error("Web3Forms access key is missing");
+
+            formData.set("access_key", accessKey);
+            formData.set("subject", `SEA website request: ${typeof subject === "string" ? subject : ""}`);
+            formData.set("from_name", "SEA Website");
+
+            const response = await fetch(WEB3FORMS_ENDPOINT, {
+              method: "POST",
+              body: formData,
+            });
+            const result = await response.json();
+
+            if (!response.ok || !result.success) throw new Error("Request failed");
             setStatus("sent");
           } catch {
             setStatus("error");
           }
         }}
       >
+        <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} autoComplete="off" />
         <div className="field-row">
           <div className="field">
             <label htmlFor="f-name">{t("cp.f.name")}</label>

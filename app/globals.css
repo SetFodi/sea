@@ -64,6 +64,7 @@ body {
   overflow-x: hidden;
 }
 body.viewer-open { overflow: hidden; }
+.hidden { display: none !important; }
 
 .page-shell {
   animation: pageEnter .46s var(--ease) both;
