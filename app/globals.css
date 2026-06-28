@@ -179,10 +179,10 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 700; line-height: 1.08; let
 .topbar-tag { color: var(--chlorine-soft); }
 .topbar svg { width: 14px; height: 14px; opacity: .85; }
 
-.navbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 76px; }
+.navbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 70px; }
 
 .brand { display: inline-flex; align-items: center; gap: 13px; }
-.brand .logo-mark { width: clamp(96px, 10vw, 128px); height: auto; flex: none; object-fit: contain; }
+.brand .logo-mark { width: auto; height: clamp(42px, 4.2vw, 58px); flex: none; object-fit: contain; }
 .brand .logo-text { display: flex; flex-direction: column; line-height: 1; }
 .brand .logo-name { font-family: var(--serif); font-weight: 700; font-size: 1.32rem; letter-spacing: .16em; color: var(--ink); padding-left: .04em; white-space: nowrap; }
 .brand .logo-sub { font-family: var(--mono); font-size: .58rem; letter-spacing: .34em; text-transform: uppercase; color: var(--brine); margin-top: 3px; white-space: nowrap; }
@@ -1047,7 +1047,7 @@ html.preloading, html.preloading body { overflow: hidden; }
 }
 @media (max-width: 380px) {
   .brand { gap: 10px; }
-  .brand .logo-mark { width: clamp(92px, 27vw, 116px); height: auto; }
+  .brand .logo-mark { width: auto; height: 48px; }
   .brand .logo-name { font-size: 1.12rem; letter-spacing: .12em; }
   .brand .logo-sub { font-size: .53rem; letter-spacing: .28em; }
   .lang-toggle button { padding-inline: 9px; }
