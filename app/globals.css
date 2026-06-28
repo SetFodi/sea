@@ -88,15 +88,15 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 700; line-height: 1.08; let
 .display {
   font-family: var(--serif);
   font-weight: 700;
-  font-size: clamp(2rem, 1.3rem + 2.5vw, 3.35rem);
-  line-height: 1.07;
+  font-size: clamp(1.5rem, 1.15rem + 1.4vw, 2.1rem);
+  line-height: 1.12;
   letter-spacing: 0;
 }
 .h-section {
   font-family: var(--serif);
   font-weight: 700;
-  font-size: clamp(1.85rem, 1.2rem + 2.4vw, 3rem);
-  line-height: 1.06;
+  font-size: clamp(1.3rem, 1.05rem + 1vw, 1.7rem);
+  line-height: 1.14;
   letter-spacing: 0;
 }
 .lead { font-size: clamp(1.05rem, .98rem + .4vw, 1.28rem); color: var(--text-2); line-height: 1.62; }
@@ -649,7 +649,7 @@ body.nav-open .menu-btn span::after { top: 0; transform: rotate(-45deg); }
 .cta-band::before { content: ""; position: absolute; inset: 0; z-index: -2; background: linear-gradient(135deg, #0c3a52 0%, #07202e 100%); }
 .cta-inner { display: grid; grid-template-columns: 1.4fr auto; gap: 28px; align-items: center; padding: clamp(26px,2.6vw,40px); border-radius: var(--radius-lg); background: linear-gradient(135deg, var(--marine), var(--abyss)); box-shadow: var(--shadow-lg); position: relative; overflow: hidden; }
 .cta-inner::after { content: ""; position: absolute; right: -60px; top: -60px; width: 320px; height: 320px; border-radius: 50%; background: radial-gradient(circle, rgba(0,180,216,.25), transparent 65%); }
-.cta-inner h2 { color: #fff; font-size: clamp(1.4rem, 1.05rem + 1.3vw, 2rem); }
+.cta-inner h2 { color: #fff; }
 .cta-inner p { color: var(--on-dark-2); margin-top: 12px; max-width: 520px; }
 .cta-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
@@ -810,7 +810,7 @@ body.nav-open .menu-btn span::after { top: 0; transform: rotate(-45deg); }
 .contact-card .cc-v a:hover { color: var(--brine); }
 
 .form-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(24px,3vw,36px); box-shadow: var(--shadow-sm); }
-.form-card .form-title { font-size: clamp(1.5rem,1.2rem+1vw,1.9rem); margin-bottom: 22px; }
+.form-card .form-title { font-size: clamp(1.25rem,1.05rem+.8vw,1.55rem); margin-bottom: 22px; }
 .field { margin-bottom: 16px; }
 .field label { display: block; font-weight: 600; font-size: .86rem; margin-bottom: 7px; color: var(--text); }
 .field input, .field textarea, .field select { width: 100%; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; font: inherit; font-size: .95rem; color: var(--text); background: var(--paper); transition: border-color .2s, box-shadow .2s; }
