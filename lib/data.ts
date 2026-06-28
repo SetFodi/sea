@@ -40,13 +40,20 @@ export function pick(obj: Loc | undefined, lang: Lang): string {
   return obj[lang] || obj.ka || obj.en || "";
 }
 
-export const PARTNERS: { main: string; sub: string }[] = [
-  { main: "GWP", sub: "Georgian Water" },
-  { main: "UWSCG", sub: "United Water Supply" },
-  { main: "SOCAR", sub: "Georgia Petroleum" },
-  { main: "Wissol", sub: "" },
-  { main: "EVEX", sub: "Medical" },
-  { main: "New Hospitals", sub: "" },
+export type Partner = {
+  main: string;
+  sub: string;
+  logo: string;
+  url: string;
+};
+
+export const PARTNERS: Partner[] = [
+  { main: "GWP", sub: "Georgian Water", logo: "/partners/gwp.png", url: "https://gwp.ge/en/" },
+  { main: "UWSCG", sub: "United Water Supply", logo: "/partners/uwscg.png", url: "https://water.gov.ge/" },
+  { main: "SOCAR", sub: "Georgia Petroleum", logo: "/partners/socar.svg", url: "https://sgp.ge/en" },
+  { main: "Wissol", sub: "Petroleum", logo: "/partners/wissol.svg", url: "https://wissol.ge/en/" },
+  { main: "EVEX", sub: "Medical", logo: "/partners/evex.png", url: "https://evex.ge/en" },
+  { main: "New Hospitals", sub: "Medical", logo: "/partners/new-hospitals.svg", url: "https://newhospitals.ge/en" },
 ];
 
 export const CAT_PROD_ICON: Record<string, IconName> = {

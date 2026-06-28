@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useLang } from "@/lib/LanguageProvider";
 import { Icon } from "./icons";
-import { Rotameter } from "./Brand";
 import Reveal from "./Reveal";
 import HomeCategories from "./HomeCategories";
 import Partners from "./Partners";
@@ -38,6 +37,10 @@ export default function HomeView() {
     <>
       {/* HERO */}
       <section className="hero">
+        <div className="hero-media" aria-hidden="true">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/hero/water-treatment-engineer.jpg" alt="" />
+        </div>
         <div className="container hero-grid">
           <div className="hero-copy">
             <span className="eyebrow on-dark">{t("hero.eyebrow")}</span>
@@ -67,27 +70,6 @@ export default function HomeView() {
               ))}
             </div>
           </div>
-
-          <Reveal className="hero-visual" delay={2}>
-            <Rotameter />
-            <div className="spec-frame">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/projects/g-25-6.jpg"
-                alt="SEA water treatment skid — sodium hypochlorite generator and RO unit"
-              />
-              <div className="spec-plate">
-                <div className="sp-tag">
-                  <div className="sp-k">{t("hero.plate.k")}</div>
-                  <div className="sp-v">{t("hero.plate.v")}</div>
-                </div>
-                <div className="spec-led">
-                  <span className="dot" />
-                  <span>{t("hero.led")}</span>
-                </div>
-              </div>
-            </div>
-          </Reveal>
         </div>
       </section>
 
