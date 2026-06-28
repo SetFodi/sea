@@ -126,28 +126,28 @@ export default function Gallery({ limit, preview = false }: { limit?: number; pr
                 <span aria-hidden="true">×</span>
               </button>
 
-              <button
-                className="image-viewer__nav image-viewer__nav--prev"
-                type="button"
-                aria-label={t("gallery.previous")}
-                onClick={showPrevious}
-              >
-                <span aria-hidden="true">‹</span>
-              </button>
-
               <div className="image-viewer__stage">
+                <button
+                  className="image-viewer__nav image-viewer__nav--prev"
+                  type="button"
+                  aria-label={t("gallery.previous")}
+                  onClick={showPrevious}
+                >
+                  <span aria-hidden="true">‹</span>
+                </button>
+
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={`/projects/${active.img}`} alt={pick(active.title)} />
-              </div>
 
-              <button
-                className="image-viewer__nav image-viewer__nav--next"
-                type="button"
-                aria-label={t("gallery.next")}
-                onClick={showNext}
-              >
-                <span aria-hidden="true">›</span>
-              </button>
+                <button
+                  className="image-viewer__nav image-viewer__nav--next"
+                  type="button"
+                  aria-label={t("gallery.next")}
+                  onClick={showNext}
+                >
+                  <span aria-hidden="true">›</span>
+                </button>
+              </div>
 
               <div className="image-viewer__caption">
                 <div>
