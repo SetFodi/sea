@@ -290,22 +290,22 @@ export const CATEGORIES: Category[] = [
 export type Project = { img: string; tag: Loc; title: Loc };
 
 export const PROJECTS: Project[] = [
-  { img: "g-25-6.jpg", tag: { ka: "NaClO გენერატორი", en: "NaClO generator" }, title: { ka: "ჰიპოქლორიტისა და RO სკიდი", en: "Hypochlorite & RO skid" } },
-  { img: "g-30-2.jpg", tag: { ka: "მართვის კარადა", en: "Control cabinet" }, title: { ka: "დოზირების კვანძი მართვის სისტემით", en: "Dosing unit with control system" } },
-  { img: "g-29.jpg", tag: { ka: "წყალმომარაგება", en: "Water utility" }, title: { ka: "შესანახი ავზი და ავტომატიკა", en: "Storage tank & automation" } },
-  { img: "g-28.jpg", tag: { ka: "RO დანადგარი", en: "RO plant" }, title: { ka: "მემბრანული ფილტრაციის კვანძი", en: "Membrane filtration unit" } },
-  { img: "g-26.jpg", tag: { ka: "ქარხნული აწყობა", en: "Factory build" }, title: { ka: "RO სისტემა გაშვებამდე", en: "RO system pre-commissioning" } },
-  { img: "g-24-6.jpg", tag: { ka: "ინსტალაცია", en: "Installation" }, title: { ka: "ჰიპოქლორიტის კვანძი ობიექტზე", en: "Hypochlorite unit on site" } },
-  { img: "g-27-2.jpg", tag: { ka: "დოზირება", en: "Dosing" }, title: { ka: "მზომი ტუმბოები და რეზერვუარები", en: "Metering pumps & tanks" } },
+  { img: "g-25-6.jpg", tag: { ka: "RO დანადგარი", en: "RO plant" }, title: { ka: "ანტიოსმოსური სკიდი მართვის პანელით", en: "Reverse-osmosis skid with control panel" } },
+  { img: "g-30-2.jpg", tag: { ka: "დოზირება", en: "Dosing" }, title: { ka: "დოზირების სადგური მართვის პანელით", en: "Dosing station with control panel" } },
+  { img: "g-29.jpg", tag: { ka: "წყლის დამუშავება", en: "Water treatment" }, title: { ka: "სისტემა ლურჯი ავზით და სატუმბი კვანძით", en: "System with blue tank and pump unit" } },
+  { img: "g-28.jpg", tag: { ka: "არმატურა", en: "Pipework" }, title: { ka: "მილგაყვანილობის კოლექტორი და სარქველები", en: "Pipe manifold and valves" } },
+  { img: "g-26.jpg", tag: { ka: "RO დანადგარი", en: "RO plant" }, title: { ka: "ანტიოსმოსური სკიდი სამუშაო ზონაში", en: "Reverse-osmosis skid in service area" } },
+  { img: "g-24-6.jpg", tag: { ka: "ინსტალაცია", en: "Installation" }, title: { ka: "დეზინფექციის სისტემა ობიექტზე", en: "Disinfection system on site" } },
+  { img: "g-27-2.jpg", tag: { ka: "დოზირება", en: "Dosing" }, title: { ka: "მზომი ტუმბოს კვანძი", en: "Metering pump unit" } },
   { img: "g-25.jpg", tag: { ka: "მარილხსნარი", en: "Brine system" }, title: { ka: "მარილის გახსნისა და განზავების ავზები", en: "Salt dissolve & dilute tanks" } },
-  { img: "g-24-1.jpg", tag: { ka: "წყალმომარაგება", en: "Water utility" }, title: { ka: "გამხსნელი ავზი და ფილტრები", en: "Dissolving tank & filters" } },
-  { img: "g-23-3.jpg", tag: { ka: "ობიექტი", en: "Field site" }, title: { ka: "რეზერვუარების მონტაჟი", en: "Tank installation" } },
-  { img: "g-26-3.jpg", tag: { ka: "ლოგისტიკა", en: "Logistics" }, title: { ka: "აღჭურვილობის მიწოდება", en: "Equipment delivery" } },
-  { img: "g-25-5.jpg", tag: { ka: "რეგიონი", en: "Regional" }, title: { ka: "ობიექტი მთიან რეგიონში", en: "Site in a mountain region" } },
-  { img: "g-24-3.jpg", tag: { ka: "ინსტალაცია", en: "Installation" }, title: { ka: "დოზირების სისტემა მართვით", en: "Dosing system with controls" } },
-  { img: "g-27.jpg", tag: { ka: "მიწოდება", en: "Supply" }, title: { ka: "ფილტრები და რეზერვუარები", en: "Filters & storage tanks" } },
-  { img: "g-29-1.jpg", tag: { ka: "დოზირება", en: "Dosing" }, title: { ka: "ქიმიური დოზირების კვანძი", en: "Chemical dosing unit" } },
-  { img: "g-24-5.jpg", tag: { ka: "მარილხსნარი", en: "Brine system" }, title: { ka: "მარილის მომზადების კვანძი", en: "Salt preparation unit" } },
+  { img: "g-24-1.jpg", tag: { ka: "დოზირება", en: "Dosing" }, title: { ka: "დოზირების სისტემა ლურჯი ავზებით", en: "Dosing system with blue tanks" } },
+  { img: "g-23-3.jpg", tag: { ka: "მონტაჟი", en: "Installation" }, title: { ka: "რეზერვუარების მონტაჟი ობიექტზე", en: "Storage tank installation on site" } },
+  { img: "g-26-3.jpg", tag: { ka: "ლოგისტიკა", en: "Logistics" }, title: { ka: "ავზებისა და აღჭურვილობის მიწოდება", en: "Tank and equipment delivery" } },
+  { img: "g-25-4.jpg", tag: { ka: "რეგიონი", en: "Regional" }, title: { ka: "ობიექტი მთიან რეგიონში", en: "Site in a mountain region" } },
+  { img: "g-24-3.jpg", tag: { ka: "დოზირება", en: "Dosing" }, title: { ka: "დოზირების ტუმბო ლურჯ ავზზე", en: "Dosing pump on blue tank" } },
+  { img: "g-27.jpg", tag: { ka: "ობიექტი", en: "Field site" }, title: { ka: "სადგურის ოთახი და ტექნოლოგიური ავზები", en: "Plant room with process tanks" } },
+  { img: "g-29-1.jpg", tag: { ka: "დოზირება", en: "Dosing" }, title: { ka: "ქიმიური დოზირების სადგური", en: "Chemical dosing station" } },
+  { img: "g-24-5.jpg", tag: { ka: "მარილხსნარი", en: "Brine system" }, title: { ka: "მარილის მომზადების ავზები", en: "Salt preparation tanks" } },
 ];
 
 export const CONTACT = {

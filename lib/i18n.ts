@@ -115,6 +115,10 @@ export const I18N: Record<Lang, Dict> = {
     "prp.lead":
       "შერჩეული ობიექტები — წყლის დეზინფექციისა და დამუშავების სისტემები, დამონტაჟებული და გაშვებული საქართველოს მასშტაბით.",
     "prp.gallery": "გალერეა",
+    "gallery.open": "სურათის გახსნა",
+    "gallery.close": "გალერეის დახურვა",
+    "gallery.previous": "წინა სურათი",
+    "gallery.next": "შემდეგი სურათი",
     "prp.partners.eyebrow": "პარტნიორები და დამკვეთები",
     "prp.partners.title": "ვისთან ვთანამშრომლობთ",
     "prp.partners.lead":
@@ -284,6 +288,10 @@ export const I18N: Record<Lang, Dict> = {
     "prp.lead":
       "Selected installations — water disinfection and treatment systems, installed and commissioned across Georgia.",
     "prp.gallery": "Gallery",
+    "gallery.open": "Open image",
+    "gallery.close": "Close gallery",
+    "gallery.previous": "Previous image",
+    "gallery.next": "Next image",
     "prp.partners.eyebrow": "Partners & clients",
     "prp.partners.title": "Who we work with",
     "prp.partners.lead":

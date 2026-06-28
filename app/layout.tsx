@@ -4,6 +4,7 @@ import { LanguageProvider } from "@/lib/LanguageProvider";
 import SiteChrome from "@/components/SiteChrome";
 import SiteFooter from "@/components/SiteFooter";
 import Preloader from "@/components/Preloader";
+import PageTransition from "@/components/PageTransition";
 
 export const metadata: Metadata = {
   title: {
@@ -30,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Preloader />
         <LanguageProvider>
           <SiteChrome />
-          <main>{children}</main>
+          <PageTransition>{children}</PageTransition>
           <SiteFooter />
         </LanguageProvider>
       </body>
