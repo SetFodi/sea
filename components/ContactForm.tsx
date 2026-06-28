@@ -6,9 +6,9 @@ import { Icon } from "./icons";
 
 export default function ContactForm() {
   const { t } = useLang();
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
-  if (sent) {
+  if (status === "sent") {
     return (
       <div className="form-card">
         <div className="form-sent">
@@ -27,9 +27,21 @@ export default function ContactForm() {
       <h2 className="h-section form-title">{t("cp.form.title")}</h2>
       <form
         noValidate
-        onSubmit={(e) => {
+        onSubmit={async (e) => {
           e.preventDefault();
-          setSent(true);
+          setStatus("sending");
+
+          try {
+            const response = await fetch("/api/contact", {
+              method: "POST",
+              body: new FormData(e.currentTarget),
+            });
+
+            if (!response.ok) throw new Error("Request failed");
+            setStatus("sent");
+          } catch {
+            setStatus("error");
+          }
         }}
       >
         <div className="field-row">
@@ -66,9 +78,10 @@ export default function ContactForm() {
           <label htmlFor="f-msg">{t("cp.f.msg")}</label>
           <textarea id="f-msg" name="message" placeholder={t("cp.f.msg.ph")} required />
         </div>
-        <button type="submit" className="btn btn--signal btn-block">
-          {t("cp.f.submit")}
+        <button type="submit" className="btn btn--signal btn-block" disabled={status === "sending"}>
+          {status === "sending" ? t("cp.f.sending") : t("cp.f.submit")}
         </button>
+        {status === "error" ? <p className="form-error">{t("cp.f.error")}</p> : null}
         <p className="form-note" style={{ marginTop: 14, textAlign: "center" }}>
           {t("cp.f.note")}
         </p>

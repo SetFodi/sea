@@ -780,7 +780,9 @@ body.nav-open .menu-btn span::after { top: 0; transform: rotate(-45deg); }
 .field textarea { resize: vertical; min-height: 130px; }
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .form-note { font-size: .82rem; color: var(--text-3); margin-top: 4px; }
+.form-error { margin-top: 12px; color: #9d2f1f; font-weight: 700; font-size: .9rem; text-align: center; }
 .btn-block { width: 100%; justify-content: center; }
+.btn:disabled { opacity: .65; cursor: wait; transform: none; }
 .form-sent { text-align: center; padding: 32px 8px; }
 .form-sent .sent-ic { width: 64px; height: 64px; border-radius: 50%; background: var(--mist); color: var(--indicator); display: grid; place-items: center; margin: 0 auto 18px; }
 .form-sent .sent-ic svg { width: 30px; height: 30px; }
