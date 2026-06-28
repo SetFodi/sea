@@ -981,22 +981,40 @@ html.preloading, html.preloading body { overflow: hidden; }
   .cta-inner { grid-template-columns: 1fr; }
   .facts { grid-template-columns: repeat(2,1fr); }
   .catalog { grid-template-columns: minmax(0, 1fr); overflow: hidden; }
-  .cat-sidebar { position: static; width: 100%; overflow: hidden; }
+  .cat-sidebar { position: static; width: 100%; overflow: visible; }
   .cat-nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 100%;
     max-width: 100%;
     gap: 8px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 10px;
-    scrollbar-width: thin;
-    overscroll-behavior-x: contain;
-    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+    padding: 9px;
   }
   .cat-nav h4 { display: none; }
-  .cat-nav button { flex: 0 0 auto; width: auto; max-width: min(82vw, 360px); white-space: nowrap; }
-  .cat-nav button .cn { overflow: hidden; text-overflow: ellipsis; }
+  .cat-nav button {
+    min-height: 64px;
+    width: 100%;
+    max-width: none;
+    gap: 8px;
+    padding: 10px 9px;
+  }
+  .cat-nav button .ci {
+    width: 31px;
+    height: 31px;
+    border-radius: 8px;
+  }
+  .cat-nav button .ci svg { width: 16px; height: 16px; }
+  .cat-nav button .cn {
+    overflow: hidden;
+    font-size: .84rem;
+    line-height: 1.12;
+  }
+  .cat-nav button .cn small {
+    font-size: .58rem;
+    line-height: 1;
+    margin-top: 4px;
+  }
 }
 @media (max-width: 760px) {
   .nav-links, .nav-cta, .topbar-tag-hide { display: none; }
@@ -1066,6 +1084,26 @@ html.preloading, html.preloading body { overflow: hidden; }
   .partner-logo img { max-width: 120px; max-height: 38px; }
 }
 @media (max-width: 520px) {
+  .section--products { padding-top: 28px; }
+  .cat-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-radius: 18px;
+  }
+  .cat-nav button {
+    min-height: 58px;
+    border-radius: 999px;
+    padding: 9px 10px;
+  }
+  .cat-nav button .ci {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+  }
+  .cat-nav button .cn {
+    font-size: .78rem;
+    line-height: 1.08;
+  }
+  .cat-nav button .cn small { display: none; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 22px 20px; }
   .process-grid { grid-template-columns: 1fr; }
   .step,
