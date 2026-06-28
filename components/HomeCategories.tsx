@@ -28,12 +28,6 @@ export default function HomeCategories() {
           <h3>{pick(c.name)}</h3>
           <span className="cat-meta">
             {c.subcats.length} {t("u.subcats")}
-            {c.source ? (
-              <>
-                {" · "}
-                <span className="src">{c.source.name}</span>
-              </>
-            ) : null}
           </span>
         </Link>
       ))}

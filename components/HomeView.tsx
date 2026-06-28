@@ -11,6 +11,8 @@ import CtaBand from "./CtaBand";
 
 export default function HomeView() {
   const { t } = useLang();
+  const heroH1b = t("hero.h1b");
+  const heroH1c = t("hero.h1c");
 
   const stats = [
     { n: t("stat.1.n"), u: "", l: t("stat.1.l") },
@@ -45,9 +47,19 @@ export default function HomeView() {
           <div className="hero-copy">
             <span className="eyebrow on-dark">{t("hero.eyebrow")}</span>
             <h1 className="display">
-              {t("hero.h1a")} <span className="accent">{t("hero.h1b")}</span>
-              <br />
-              {t("hero.h1c")}
+              {t("hero.h1a")}
+              {heroH1b ? (
+                <>
+                  {" "}
+                  <span className="accent">{heroH1b}</span>
+                </>
+              ) : null}
+              {heroH1c ? (
+                <>
+                  <br />
+                  {heroH1c}
+                </>
+              ) : null}
             </h1>
             <p className="lead">{t("hero.lead")}</p>
             <div className="hero-actions">

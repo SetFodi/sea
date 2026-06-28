@@ -20,8 +20,6 @@ export type Subcat = {
   items: ProductItem[] | Loc[];
 };
 
-export type Source = { name: string; url: string; official?: boolean };
-
 export type Category = {
   id: string;
   code: string;
@@ -29,7 +27,6 @@ export type Category = {
   img?: string;
   name: Loc;
   tagline: Loc;
-  source?: Source;
   type: "products" | "list";
   note?: Loc;
   subcats: Subcat[];
@@ -73,7 +70,6 @@ export const CATEGORIES: Category[] = [
       ka: "ნატრიუმ ჰიპოქლორიტი, ანტიოსმოსი, ფილტრაცია და დოზირება — სრული ხაზი.",
       en: "Sodium hypochlorite, reverse osmosis, filtration and dosing — the full line.",
     },
-    source: { name: "HEPHIS", url: "https://www.hephis.com/", official: true },
     type: "products",
     subcats: [
       {
@@ -154,7 +150,6 @@ export const CATEGORIES: Category[] = [
       ka: "წყლის დამუშავების რეაგენტები ანტიოსმოსური, გამაგრილებელი და ქვაბის სისტემებისთვის.",
       en: "Water-treatment chemicals for RO, cooling-tower and boiler systems.",
     },
-    source: { name: "NCC · Newtech Chemicals", url: "https://www.ncc.com.tr/" },
     type: "products",
     note: {
       ka: "ქართულენოვანი აღწერები მზადდება — სრული ჩამონათვალი მალე დაემატება.",
@@ -209,7 +204,6 @@ export const CATEGORIES: Category[] = [
       ka: "სამედიცინო და ლაბორატორიული პროდუქციის სრული ჯგუფები — დეტალები მოთხოვნით.",
       en: "Full groups of medical and laboratory products — details on request.",
     },
-    source: { name: "HIPROVE", url: "https://www.hiprove.com/" },
     type: "list",
     subcats: [
       {
@@ -250,7 +244,6 @@ export const CATEGORIES: Category[] = [
       ka: "ძრავები, საზღვაო ავტომატიკა და გემის მექანიზმები წამყვანი მწარმოებლებისგან.",
       en: "Engines, marine automation and ship machinery from leading makers.",
     },
-    source: { name: "Hindustan Marine", url: "https://hindustanmarine.com/" },
     type: "list",
     subcats: [
       {

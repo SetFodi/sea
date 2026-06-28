@@ -25,10 +25,6 @@ export default function SiteFooter() {
           <div className="footer-brand">
             <Link className="brand" href="/">
               <Logo />
-              <span className="logo-text">
-                <span className="logo-name">{t("brand.name")}</span>
-                <span className="logo-sub">{t("brand.sub")}</span>
-              </span>
             </Link>
             <p>{t("foot.about")}</p>
             <div className="social">

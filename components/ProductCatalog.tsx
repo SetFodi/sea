@@ -57,17 +57,6 @@ export default function ProductCatalog() {
           </span>
           <h2>{pick(cat.name)}</h2>
           <p>{pick(cat.tagline)}</p>
-          {cat.source ? (
-            <a
-              className={`src-tag${cat.source.official ? " is-official" : ""}`}
-              href={cat.source.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {cat.source.official ? <Icon name="shield" /> : null}
-              {t(cat.source.official ? "pp.official" : "pp.maker")}: <b>{cat.source.name}</b>
-            </a>
-          ) : null}
         </div>
 
         {cat.subcats.map((sc, i) => (

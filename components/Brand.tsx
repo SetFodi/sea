@@ -1,18 +1,5 @@
 export function Logo() {
-  return (
-    <svg className="logo-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-      <defs>
-        <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#00B4D8" />
-          <stop offset="1" stopColor="#15639B" />
-        </linearGradient>
-      </defs>
-      <circle cx="24" cy="24" r="22" fill="#0B2A3A" />
-      <path d="M24 11s9 9.5 9 16.5a9 9 0 1 1-18 0C15 20.5 24 11 24 11Z" fill="url(#lg)" />
-      <path d="M19 27a5 5 0 0 0 5 5" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" fill="none" opacity=".85" />
-      <rect x="22.4" y="22" width="3.2" height="9" rx="1.6" fill="#FF6A2C" />
-    </svg>
-  );
+  return <img className="logo-mark" src="/brand/sea-logo.png" alt="" aria-hidden="true" />;
 }
 
 export function Rotameter() {
